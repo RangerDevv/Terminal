@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styling */
+
+#Terminal {
+    position: absolute;
+    z-index: 9;
+  }

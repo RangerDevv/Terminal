@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./src/input.css" rel="stylesheet">
+</head>
+<body class=" bg-slate-800">
+    <!-- Terminal -->
+    <div class=" w-[45rem] h-96 bg-black rounded-xl" id="Terminal">
+        <!-- Draggable header if you want this to work add id="Terminalheader" in the tag-->
+        <!-- <header  class="w-[45rem] h-5"></header> -->
+        <!-- TopBar stuff  -->
+        <div class=" flex flex-row pt-2" >
+            <p class="text-white text-center w-screen mt-1.5 ml-6" id="Terminalheader">Terminal</p>
+            <div class="flex flex-row gap-x-3">
+            <div class=" flex flex-row gap-x-2 mr-4">
+                <!-- These buttons do not work  -->
+            <p class=" text-red-600 text-2xl">o</p>
+            <p class="text-green-600 text-2xl">o</p>
+            <p class="text-yellow-600 text-2xl">o</p>
+            </div>
+            </div>
+        </div>
+        <!-- Input -->
+        <div id="input_place" class=" flex flex-row gap-x-4 m-5">
+            <!-- The starting line -->
+            <p class=" text-white">Guest@host~$</p>
+            <!-- Input  -->
+            <input id="Input" type="input" class=" bg-transparent text-white w-screen outline-none"> <!-- Here is the input -->
+        </div>
+        <!-- Here is the output for the terminal -->
+        <div class="m-5 text-white ">
+            <p id="Output" class="w-[40rem]"></p>
+        </div>
+    </div>
+</body>
+<!-- JS linking -->
+<script src="./index.js"></script>
+</html>
